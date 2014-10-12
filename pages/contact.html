@@ -13,17 +13,19 @@
 
     <header>
         <nav>
-            <a href="../index.html">Afford My Baby</a>
+            <a class="logo" href="../index.html">Afford My Baby</a>
             <div class="mainNav">
-                <a href="shop.html">Shop!</a>
-                <a href="share.html">Share</a>
-                <a href="login.html">Login/Join</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a class="navlinks" href="shop.html">Shop!</a>
+                <a class="navlinks" href="share.html">Share</a>
+                <a class="navlinks" href="login.html">Login/Join</a>
+                <a class="navlinks" href="about.html">About</a>
+                <a class="navlinks" id="current" href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
+    <div class="main">
     <h1>Contact Us!</h1>
+    <div class="left">
     <form class="contact_form" action="#" method="POST" enctype="multipart/form-data">
 	<div class="row">
 		<label for="name">Your name:</label><br />
@@ -38,13 +40,20 @@
 		<textarea id="message" class="input" name="message" rows="15" cols="30"></textarea><br />
 	</div>
 	<input id="submit_button" type="submit" value="Send email" />
-    </form>	
-    
+    </form>
+    </div>
+    <div class="right">
     <aside class="search">
+      <div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" id="tfq" class="tftextinput4" name="q" size="18" maxlength="120"><input type="submit" value=" " class="tfbutton4">
+		</form>
+		<div class="tfclear"></div>
+	</div>
         <p>Search Deals!</p>
     </aside>
     
-    <aside class="contactinfo">
+    <aside class="links">
         <h3>Contact Info</h3>
             <ul>
                 <li>Affordmybaby.com</li>
@@ -53,35 +62,24 @@
                 <li>info@affordmybaby.com</li>
             </ul>
     </aside>
-    
+    </div>
+    <div class="clear"></div>
+   </div>
     <footer>
         <p>
             All Rights Reserved. Copyright 2014 Linkda Media.
         </p>
             <nav>
-            <a href="../index.html">Afford My Baby</a>
+            <a class="logo" href="../index.html">Afford My Baby</a>
             <div class="mainNav">
-                <a href="shop.html">Shop!</a>
-                <a href="share.html">Share</a>
-                <a href="login.html">Login/Join</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a class="navlinks" href="shop.html">Shop!</a>
+                <a class="navlinks" href="share.html">Share</a>
+                <a class="navlinks" href="login.html">Login/Join</a>
+                <a class="navlinks" href="about.html">About</a>
+                <a class="navlinks" id="current" href="contact.html">Contact</a>
             </div>
         </nav>
     </footer>           
     </div> 
-</body>
-</html>
-
-
-<html>
-<head>
-    <title>Page Title</title>
-</head>
-
-<body>
-
-
-
 </body>
 </html>
