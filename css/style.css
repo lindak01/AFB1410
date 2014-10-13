@@ -52,6 +52,7 @@ a.logo:visited {
 /**********************Links********************/
 a{
     text-decoration: none;
+    color: #74bfdf;
 }
 
 a:visited {
