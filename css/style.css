@@ -49,6 +49,26 @@ a.logo:visited {
 #current {
   color: #606060;
 }
+
+nav ul {
+  text-align: left;
+  display: inline;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+}
+
+nav ul li:hover > .dropdown {
+  display: block;
+}
+
+
 /**********************Links********************/
 a{
     text-decoration: none;
