@@ -1,6 +1,6 @@
 <?php
     $user="root";
     $host="localhost";
-    $password="";
+    $passwrd="";
     $database="AFB1410";
 ?>
