@@ -27,7 +27,7 @@ include('session.php');
         </nav>
     </header>
     <div class="main">
-    <h1>My Deals!</h1>
+    <h1>My Deals! Welcome: <i><?php echo $login_session; ?></i></h1>
     <div class="left">
     <article>
       <div class="date">

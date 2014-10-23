@@ -6,6 +6,8 @@
     <title>Join!-AffordMyBaby.com</title>
     
     <link href="../css/style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/registration.js"></script>
 </head>
 
 <body>
@@ -40,25 +42,25 @@
     <h1>Sign up for member exclusives!</h1>
     <div class="left">
     <section class="join">  
-        <form name="login" action="#" method="get" accept-charset="utf-8">  
+        <form name="login" class="form" action="#" method="post" accept-charset="utf-8">  
         <ul>  
             <li><label for="firstname">First Name:</label>  
-            <input id="inputbx" type="text" name="fname" placeholder="jane" required></li>
+            <input id="inputbx" type="text" class="fname" name="fname" placeholder="jane" required></li>
             <li><label for="Lastname">Last Name:</label>  
-            <input id="inputbx" type="text" name="lname" placeholder="doe" required></li>
+            <input id="inputbx" type="text" class="lname" name="lname" placeholder="doe" required></li>
             <li><label for="username">Username:</label>  
-            <input id="inputbx" type="text" name="uname" placeholder="jane" required></li>
+            <input id="inputbx" type="text" class="uname" name="uname" placeholder="jane" required></li>
             <li><label for="email">Email:</label>  
-            <input id="inputbx" type="email" name="email" placeholder="janedoe@gmail.com" required></li>
+            <input id="inputbx" type="email" class="email" name="email" placeholder="janedoe@gmail.com" required></li>
             <li><label for="confirmemail">Confirm Email:</label>  
-            <input id="inputbx" type="email" name="email" placeholder="janedoe@gmail.com" required></li> 
+            <input id="inputbx" type="email" class="cemail" name="cemail" placeholder="janedoe@gmail.com" required></li> 
             <li><label for="password">Password:</label>  
-            <input id="inputbx" type="password" name="password" placeholder="password" required></li>
+            <input id="inputbx" type="password" class="password" name="password" placeholder="password" required></li>
             <p class="pwdhelp">Numbers or letters only. Must be 8 characters or more.</p>
             <li><label for="password">Confirm Password:</label>  
-            <input id="inputbx" type="password" name="password" placeholder="password" required></li> 
+            <input id="inputbx" type="password" class="cpassword" name="cpassword" placeholder="password" required></li> 
             <li>  
-            <input class="joinbtn" type="submit" value="Join"></li>  
+            <input class="joinbtn" type="button" name="join" id="join" value="Join"></li>  
         </ul>  
      </form>  
     </section>

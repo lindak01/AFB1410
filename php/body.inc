@@ -16,7 +16,7 @@
                   </ul>
                 </li>
                 <li><a class="navlinks" href="pages/share.html">Share</a></li>
-                <li><a class="navlinks" href="pages/login.html">Login/Join</a></li>
+                <li><a class="navlinks" href="php/login_form.php">Login/Join</a></li>
                 <li><a class="navlinks" href="pages/about.html">About</a></li>
                 <li><a class="navlinks" href="pages/contact.html">Contact</a></li>
                </ul>
@@ -25,12 +25,11 @@
     </header>
 
       <ul class="bxslider">
-	    <li><img src="images/img1.jpg" /></li>
-	    <li><img src="images/img2.jpg" /></li>
-	    <li><img src="images/img3.jpg" /></li>
-	    <li><img src="images/img1.jpg" /></li>
-	    <li><img src="images/img2.jpg" /></li>
-	    <li><img src="images/img3.jpg" /></li>
+	    <li class="slide"><a href="pages/deals/deal1.html"><img title="Pack-n-Play $99.99" src="images/img1.jpg" /></a></li>
+	    <li class="slide"><img title="Save now! 25% Off Essentials" src="images/img2.jpg" /></li>
+	    <li class="slide"><img title="Pink Baby Bouncer 25% Off" src="images/img3.jpg" /></li>
+	    <li class="slide"><img title="Jump-A-Roo! $59.99" src="images/img4.jpg" /></li>
+
       </ul>
 
     <hr>

@@ -5,7 +5,7 @@ include("../images/mum.inc");
 
 if (isset($_POST['submit'])) {
     if(empty($_POST['useremail']) || empty($_POST['password'])) {
-        $error="Email or Password is invalid.";
+        $error="Email or Password is blank.";
     }
     else
     {
@@ -14,21 +14,20 @@ if (isset($_POST['submit'])) {
         
         $useremail=stripslashes($useremail);
         $password=stripslashes($password);
-        $useremail=mysql_real_escape_string($useremail);
-        $password=mysql_real_escape_string($password);
+        $useremail=mysqli_real_escape_string($useremail);
+        $password=mysqli_real_escape_string($password);
         
-        $connection = mysql_connect($host, $user, $passwrd);
-        $db = mysql_select_db($database, $connection);
-        $query = mysql_query("SELECT * from members WHERE password='$password' AND useremail='$useremail'", $connection);
-        $rows = mysql_num_rows($query);
-        
+        $connection = mysqli_connect($host,$user,$passwrd) or die("Unable to connect");
+        $db = mysqli_select_db($connection,$database) or die("Could not access database");
+        $query = mysqli_query("SELECT * FROM members WHERE passwd='$password' AND email='$useremail'", $connection);
+        $rows = mysqli_num_rows($query);
         if ($rows == 1) {
             $_SESSION['login_user']=$useremail;
             header("location: mydeals.php");
         } else {
             $error = "Email or Password is invalid";
         }
-        mysql_close($connection);
+        mysqli_close($connection);
     }
 }
 ?>

@@ -24,13 +24,16 @@
     
     <script type="text/javascript">
         $(document).ready(function(){
-        $('.bxslider').bxSlider({
-        minSlides: 3,
-        maxSlides: 3,
-        slideWidth: 300,
-        slideMargin: 10,
-});
-});
+                $('.bxslider').bxSlider({
+                  minSlides: 3,
+                  maxSlides: 3,
+                  moveSlides: 1,
+                  captions: true,
+                  pager: false,
+                  slideWidth: 250,
+                  slideMargin: 10
+                });
+        });
     </script>
 </body>
 </html>
